@@ -43,9 +43,7 @@ We evaluate our approach on synthetic cancer treatment simulations [2,3], semi s
 
 [3] Hadjiandrou M., & Mitsis G. "Mathematical Modeling of Tumor Growth, Drug-Resistance, Toxicity, and Optimal Therapy Design". In IEEE Transactions on Biomedical Engineering, vol. 61.2, pp. 415–425. ISSN: 0018-9294, 1558-2531. DOI: 10.1109/TBME.2013.2280189 (2014)
 
-[4] Schulam P., Saria S., „Reliable Decision Support using Counterfactual Models“. In Neural Information Processing Systems (NIPS) (2017), DOI: 
-
-https://doi.org/10.48550/arXiv.1703.10651
+[4] Schulam P., Saria S., „Reliable Decision Support using Counterfactual Models“. In Neural Information Processing Systems (NIPS) (2017), DOI: https://doi.org/10.48550/arXiv.1703.10651
 
 
 [5] Johnson A. E. W. et al. "MIMIC-IV, a freely accessible electronic health record dataset". Sci. Data 10, 1 (2023). URL https://www.nature.com/articles/s41597-022-01899-x
