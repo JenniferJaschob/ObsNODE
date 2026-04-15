@@ -1,0 +1,10 @@
+Best Hyperparameters:
+num_layer: 2
+num_heads: 1
+learning_rate: 0.01
+batch_size: 64
+seq_hidden_units: 4.0
+hr_size: 4.0
+fc_hidden_units: 2.0
+dropout_rate: 0.1
+val_loss: 1.6989273423835347

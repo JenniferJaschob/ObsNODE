@@ -1,0 +1,22 @@
+# @package _global_
+dataset:
+  _target_: src.data.semisinmimiciv_sim.custom_dataset.CustomDatasetCollection
+  name: custom_semisynmimiciv
+  train_path: /home/jaschob/server/data_csv/semisynmimiciv/x_train_syn_dynamic.csv
+  val_path: /home/jaschob/server/data_csv/semisynmimiciv/x_val_syn_dynamic.csv 
+  test_path: /home/jaschob/server/data_csv/semisynmimiciv/x_test_syn_dynamic.csv 
+
+  projection_horizon: 23
+  val_batch_size: 512 
+  treatment_mode: multilabel
+  predict_weight: True
+  
+model:
+  dim_outcomes: 1
+  dim_treatments: 2
+  dim_vitals: 0
+  dim_static_features: 0
+
+exp:
+  unscale_rmse: True
+  percentage_rmse: True

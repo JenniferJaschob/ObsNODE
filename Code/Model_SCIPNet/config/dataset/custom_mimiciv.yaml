@@ -1,0 +1,24 @@
+# @package _global_
+dataset:
+  _target_: src.data.mimiciv.custom_dataset.CustomDatasetCollection
+  name: custom_mimiciv_13_new
+  train_path: /home/jaschob/server/data_csv/mimiciv/df_train_all.pkl
+  val_path: /home/jaschob/server/data_csv/mimiciv/df_validate_all.pkl
+  test_path: /home/jaschob/server/data_csv/mimiciv/df_test_all.pkl
+
+  projection_horizon: 12
+  val_batch_size:  512
+  treatment_mode: multilabel
+  predict_weight: True
+  
+  already_standardized: True
+  
+model:
+  dim_outcomes: 4
+  dim_treatments: 3
+  dim_vitals: 22
+  dim_static_features: 12
+
+exp:
+  unscale_rmse: False
+  percentage_rmse: False

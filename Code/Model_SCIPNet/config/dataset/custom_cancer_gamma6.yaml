@@ -1,0 +1,22 @@
+# @package _global_
+dataset:
+  _target_: src.data.cancer_sim.custom_dataset.CustomDatasetCollection
+  name: custom_cancer
+  train_path: /home/jaschob/server/data_csv/cancer/train_cancer_DoseAI_data.csv 
+  val_path: /home/jaschob/server/data_csv/cancer/val_cancer_DoseAI_data.csv 
+  test_path: /home/jaschob/server/data_csv/cancer/test_cancer_gamma_6_data.csv 
+  
+  projection_horizon: 12
+  val_batch_size: 64
+  treatment_mode: multilabel
+  predict_weight: True
+  
+model:
+  dim_outcomes: 2 
+  dim_treatments: 2
+  dim_vitals: 0
+  dim_static_features: 0
+
+exp:
+  unscale_rmse: True
+  percentage_rmse: True

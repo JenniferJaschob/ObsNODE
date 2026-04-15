@@ -1,0 +1,21 @@
+# @package _global_
+dataset:
+  coeff: 2.0
+
+model:
+  gt:
+    optimizer:
+      learning_rate: 0.01
+    batch_size: 64
+    num_layer: 2
+    seq_hidden_units: 4
+    hr_size: 4
+    fc_hidden_units: 2
+    dropout_rate: 0.1
+    num_heads: 1
+
+  self_positional_encoding:
+    max_relative_position: 15
+
+exp:
+  max_epochs: 50

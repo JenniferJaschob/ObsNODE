@@ -1,0 +1,46 @@
+# @package _global_
+
+dataset:
+  treatment_mode: multilabel
+  fill_missing: False
+
+model:
+  propensity_treatment:
+    num_layer: 2
+    batch_size: 256
+    seq_hidden_units: 42 #42
+    dropout_rate: 0.2
+    max_grad_norm: 0.5
+    optimizer:
+      learning_rate: 0.01
+
+  propensity_history:
+    num_layer: 2
+    batch_size: 256
+    seq_hidden_units: 42 #42
+    dropout_rate: 0.1
+    max_grad_norm: 2.0
+    optimizer:
+      learning_rate: 0.01
+
+  encoder:
+    num_layer: 1
+    batch_size: 256
+    seq_hidden_units: 42 #2
+    dropout_rate: 0.1
+    max_grad_norm: 0.5
+    optimizer:
+      learning_rate: 0.01
+
+  train_decoder: True
+  decoder:
+    num_layer: 2
+    batch_size: 512
+    seq_hidden_units: 84 #32*41#...
+    dropout_rate: 0.1
+    max_grad_norm: 0.5
+    optimizer:
+      learning_rate: 0.01
+
+exp:
+  max_epochs: 50      
